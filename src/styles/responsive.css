@@ -95,3 +95,20 @@
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    background: url(/dist/images/hero-image_4-large.jpg);
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    min-height: 500px;
+    background: url(/dist/images/hero-image_4-small.jpg);
+    background-position: center;
+    background-image: -webkit-image-set("/dist/images/hero-image_4-small.jpg" 1x);
+    background-image: image-set("/dist/images/hero-image_4-small.jpg" 1x);
+  }
+}

@@ -20,17 +20,12 @@ const app = new App({
 });
 
 const skipLink = document.querySelector('.skip-link');
-// const mainContent = document.querySelector('mainContent');
-
 skipLink.addEventListener('click', (event) => {
   event.preventDefault();
   document.querySelector('#mainContent').focus();
-  // mainContent.scrollIntoView({ behavior: 'smooth' });
-  // skipLink.blur();
 });
 
 window.addEventListener('hashchange', () => {
-  // document.querySelector('.container').scrollIntoView();
   app.renderPage();
 });
 
