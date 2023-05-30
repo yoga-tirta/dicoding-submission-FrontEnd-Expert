@@ -349,7 +349,7 @@ main {
   padding: 0.6em;
   color: var(--font-color);
   text-decoration: none;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
 }
 
 .detail-desc {
